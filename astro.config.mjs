@@ -16,4 +16,5 @@ export default defineConfig({
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeMathjax],
   },
+  site: 'https://Sean95164.github.io',
 });
