@@ -1,171 +1,83 @@
-export const personalInfo = {
-  name: "Lorem Ipsum",
-  location: "Dolor Sit Amet",
-  email: "lorem@ipsum.com",
-  github: "https://github.com/loremipsum",
-  linkedin: "https://linkedin.com/in/loremipsum",
-  profilePicture: "/profile.jpeg",
-  heroDescription:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-};
+import { b } from "framer-motion/client";
 
-export const workExperience = [
-  {
-    company: "Lorem Ipsum Corp",
-    location: "Lorem City",
-    position: "Lorem Engineer",
-    period: "Jan 2020 - Present",
-    achievements: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "Excepteur sint occaecat cupidatat non proident.",
-      "Sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio.",
-    ],
-  },
-  {
-    company: "Dolor Sit Amet",
-    location: "Ipsumville",
-    position: "Software Developer",
-    period: "Feb 2019 - Jan 2020",
-    achievements: [
-      "Morbi in sem quis dui placerat ornare.",
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
-    ],
-  },
-  {
-    company: "Consectetur Inc.",
-    location: "Adipiscing, Ipsum",
-    position: "Intern",
-    period: "Jun 2018 - Feb 2019",
-    achievements: [
-      "Praesent dapibus, neque id cursus faucibus.",
-      "Fusce feugiat malesuada odio.",
-    ],
-  },
-];
+export const personalInfo = {
+  name: "Sean95164",
+  location: "Taiwan",
+  email: "swsc940106@gmail.com",
+  github: "https://github.com/Sean95164",
+  linkedin: "",
+  profilePicture: "/default.png",
+  bio: "Aspiring software engineer and AI enthusiast with a passion for building innovative projects. Currently pursuing a BSc in Computer Science and Information Engineering at National Cheng Kung University. Skilled in Python, C/C++, JavaScript, and deep learning frameworks like TensorFlow and PyTorch. Eager to apply my knowledge and creativity to solve real-world problems and contribute to the tech community.",
+};
+export const workExperience = [];
 
 export const education = [
   {
-    institution: "Lorem Ipsum University",
-    location: "Lorem City",
-    degree: "BSc Lorem Ipsum",
-    period: "2015 - 2019",
+    institution: "National Cheng Kung University",
+    location: "Tainan, Taiwan",
+    degree: "BSc Computer Science and Information Engineering",
+    period: "2023 - Present",
     achievements: [
-      "President of Lorem Ipsum Club",
-      "Organized multiple lorem events",
-      "Represented university in national competitions.",
-      "Graduated with honors.",
     ],
   },
 ];
 export const skills = {
   programmingLanguages: [
-    "LoremLang",
-    "IpsumScript",
-    "DolorLang",
-    "SitLang",
-    "AmetLang",
-    "ConsecteturLang",
+    "Python",
+    "C",
+    "C++",
+    "JavaScript",
+    "MATLAB"
   ],
   frontendDevelopment: [
-    "LoremJS",
-    "IpsumJS",
-    "Dolor Native",
-    "Sit UI",
-    "Amet CSS",
     "HTML",
     "CSS",
+    "React",
+    "Tailwind CSS",
   ],
-  backendDevelopment: ["LoremNode", "IpsumExpress"],
-  databaseAndStorage: ["LoremDB", "IpsumORM"],
-  cloudAndDevOps: ["LoremCloud"],
-  toolsAndServices: [
-    "LoremAuth",
-    "IpsumCMS",
-    "DolorAnalytics",
-    "SitValidator",
-    "AmetMonitor",
-    "ConsecteturPanel",
-    "AdipiscingTrigger",
-  ],
+  backendDevelopment: ["Node.js",, "Express"],
+  databaseAndStorage: ["MongoDB"],
+  cloudAndDevOps: ["Docker"],
+  DLFrameworks: ["TensorFlow", "PyTorch", "Fastai"],
+  NotetakingTools: [
+    "Logseq",
+    "Obsidian",
+  ]
 };
 
 export const projects = [
   {
-    title: "Lorem Ipsum Project",
-    github: "https://github.com/loremipsum/project",
+    title: "Discord AI Comic Explainer Bot",
+    github: "https://github.com/Sean95164/discord-ai-comic-explainer",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
-      "Excepteur sint occaecat cupidatat non proident.",
+      "A Discord bot that scrapes daily tech comics (XKCD, MonkeyUser, Turnoff.us)", 
+      "Use Vision LLMs (Llama-4 via Groq) to explain the jokes.",
     ],
   },
   {
-    title: "Dolor Sit Amet App",
-    github: "https://github.com/loremipsum/dolorapp",
+    title: "Personal Portfolio Website",
+    github: "https://github.com/Sean95164/Sean95164",
     description: [
-      "Morbi in sem quis dui placerat ornare.",
-      "Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam.",
-      "Praesent dapibus, neque id cursus faucibus.",
-      "Fusce feugiat malesuada odio.",
-      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.",
+      "A personal portfolio website built with Node.js, React, Framer Motion, and Tailwind CSS.",
+      "Showcases my projects, skills, and experience in a clean and modern design.",
     ],
-  },
+  }
 ];
 
 export const awards = [
   {
-    name: "Lorem Ipsum Award",
-    issuer: "Lorem Organization",
-    date: "Jan 2020",
-    type: "International",
-    position: "First Place",
+    name: "114-1 NCKU CSIE Academic Excellence Awards",
+    issuer: "National Cheng Kung University",
+    date: "Apr 2025",
+    type: "institutional",
+    position: "3rd Place",
   },
   {
-    name: "Dolor Sit Amet Prize",
-    issuer: "Ipsum Foundation",
-    date: "Feb 2021",
-    type: "National",
-    position: "Runner-up",
-  },
-  {
-    name: "Consectetur Hackathon",
-    issuer: "Adipiscing Org",
-    date: "Mar 2022",
-    type: "National",
-    position: "Winner",
-  },
-  {
-    name: "Vestibulum Event",
-    issuer: "Vestibulum College",
-    date: "Apr 2022",
-    type: "National",
-    position: "First Prize",
-  },
-  {
-    name: "Curabitur Hackfest",
-    issuer: "Curabitur Institute",
-    date: "May 2022",
-    type: "National",
-    position: "Second Prize",
-  },
-  {
-    name: "Praesent Hacks",
-    issuer: "Praesent Group",
-    date: "Jun 2022",
-    type: "National",
-    position: "Second Runner-up",
-  },
-  {
-    name: "Fusce Hack",
-    issuer: "Fusce Club",
-    date: "Jul 2022",
-    type: "National",
-    position: "Most Impactful Hack",
-  },
+    name: "112-2 NCKU ES Academic Excellence Awards",
+    issuer: "National Cheng Kung University",
+    date: "Oct 2024",
+    type: "institutional",
+    position: "3rd Place",
+  }
+
 ];

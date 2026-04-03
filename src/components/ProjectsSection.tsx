@@ -7,18 +7,18 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { Github } from "lucide-react";
 import { GlassCard } from "./ui/glass-card";
 import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
 
 export default function ProjectsSection() {
   return (
+  
     <section id="projects" className="py-12 relative">
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
         <MotionWrapper>
           <h2 className="text-2xl font-bold mb-8 text-center md:text-left">
-            🚀 Projects
+            Projects
           </h2>
         </MotionWrapper>
 
@@ -56,7 +56,7 @@ export default function ProjectsSection() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <Github className="h-4 w-4 mr-2 group-hover/link:rotate-12 transition-transform duration-300" />
+                    <img src="https://cdn.simpleicons.org/github" className="h-4 w-4 mr-2 dark:invert" />
                     View on GitHub 🔗
                   </motion.a>
                 </CardFooter>

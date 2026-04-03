@@ -27,29 +27,11 @@ export default function Footer() {
             viewport={{ once: true }}
             whileHover={{ scale: 1.01 }}
           >
-            Built with{" "}
-            <motion.span
-              className="inline-block"
-              initial={{ rotate: 0 }}
-              whileHover={{ rotate: 360 }}
-              transition={{ duration: 0.5 }}
-            >
-              💻
-            </motion.span>{" "}
-            and{" "}
-            <motion.span
-              className="inline-block"
-              animate={{
-                scale: [1, 1.2, 1],
-              }}
-              transition={{
-                repeat: Infinity,
-                repeatType: "reverse",
-                duration: 1.5,
-              }}
-            >
-              ❤️
-            </motion.span>
+            Built with
+            <> </><a className="text-blue-600" href="https://astro.build/" target="_blank" rel="noopener noreferrer">Astro</a>, 
+            <> </><a className="text-blue-600" href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React</a>, 
+            <> </><a className="text-blue-600" href="https://www.framer.com/motion/" target="_blank" rel="noopener noreferrer">Framer Motion</a>, and 
+            <> </><a className="text-blue-600" href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer">Tailwind CSS</a>. 🚀
           </motion.p>
         </motion.div>
       </div>

@@ -1,0 +1,14 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import GlassHeader from '@/components/GlassHeader';
+import SkillsSection from '@/components/SkillsSection';
+import Footer from '@/components/Footer';
+---
+
+<Layout>
+  <GlassHeader client:only="react" />
+  <main class="min-h-screen">
+    <SkillsSection client:only="react" />
+  </main>
+  <Footer client:only="react" />
+</Layout>

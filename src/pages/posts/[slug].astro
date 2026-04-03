@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import GlassHeader from '@/components/GlassHeader';
+import Footer from '@/components/Footer';
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('posts');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug }, 
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout>
+  <GlassHeader client:only="react" />
+  <main class="min-h-screen px-6 py-10 max-w-3xl mx-auto">
+    <article class="prose prose-invert prose-purple max-w-none">
+      <header class="mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">{entry.data.title}</h1>
+        <div class="text-gray-400 font-mono">
+          Published on {new Date(entry.data.date).toLocaleDateString()}
+        </div>
+      </header>
+
+      <div class="markdown-content">
+        <Content />
+      </div>
+    </article>
+  </main>
+
+  <Footer client:only="react" />
+</Layout>
+
