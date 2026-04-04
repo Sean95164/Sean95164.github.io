@@ -72,20 +72,20 @@ export default function GlassHeader() {
             transition={{ duration: 0.3 }}
           >
             <nav className="flex flex-col space-y-4 text-sm font-medium">
-              {["experience", "skills", "projects", "awards", "education"].map(
+              {["blogs", "projects", "skills", "awards", "education"].map(
                 (item, index) => (
                   <motion.a
                     key={item}
-                    href={`#${item}`}
+                    href={`/${item}`}
                     className="transition-colors hover:text-foreground/80 text-foreground/60 py-2"
                     onClick={toggleMenu}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.2, delay: index * 0.1 }}
                   >
-                    {item === "experience" && "💼 "}
-                    {item === "skills" && "🛠️ "}
+                    {item === "blogs" && "📝 "}
                     {item === "projects" && "🚀 "}
+                    {item === "skills" && "🛠️ "}
                     {item === "awards" && "🏆 "}
                     {item === "education" && "🎓 "}
                     {item.charAt(0).toUpperCase() + item.slice(1)}
