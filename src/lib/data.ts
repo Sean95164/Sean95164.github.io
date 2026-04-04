@@ -7,7 +7,7 @@ export const personalInfo = {
   github: "https://github.com/Sean95164",
   linkedin: "",
   profilePicture: "/default.png",
-  bio: "Aspiring software engineer and AI enthusiast with a passion for building innovative projects. Currently pursuing a BSc in Computer Science and Information Engineering at National Cheng Kung University. Skilled in Python, C/C++, JavaScript, and deep learning frameworks like TensorFlow and PyTorch. Eager to apply my knowledge and creativity to solve real-world problems and contribute to the tech community.",
+  bio: "Currently pursuing a BSc in Computer Science and Information Engineering at National Cheng Kung University. Skilled in Python, C/C++, JavaScript, and deep learning frameworks like TensorFlow and PyTorch. Eager to apply my knowledge and creativity to solve real-world problems and contribute to the tech community.",
 };
 export const workExperience = [];
 
