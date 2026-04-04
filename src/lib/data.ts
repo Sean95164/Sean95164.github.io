@@ -77,14 +77,14 @@ export const awards = [
     name: "114-1 NCKU CSIE Academic Excellence Awards",
     issuer: "National Cheng Kung University",
     date: "Apr 2025",
-    type: "institutional",
+    type: "Institutional",
     position: "3rd Place",
   },
   {
     name: "112-2 NCKU ES Academic Excellence Awards",
     issuer: "National Cheng Kung University",
     date: "Oct 2024",
-    type: "institutional",
+    type: "Institutional",
     position: "3rd Place",
   }
 
