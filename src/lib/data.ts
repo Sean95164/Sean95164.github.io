@@ -16,7 +16,15 @@ export const education = [
     institution: "National Cheng Kung University",
     location: "Tainan, Taiwan",
     degree: "BSc Computer Science and Information Engineering",
-    period: "2023 - Present",
+    period: "2025 - Present",
+    achievements: [
+    ],
+  },
+  {
+    institution: "National Cheng Kung University",
+    location: "Tainan, Taiwan",
+    degree: "BSc Engineering Science (Transfer to CSIE in 2025)",
+    period: "2023 - 2025",
     achievements: [
     ],
   },
@@ -56,7 +64,7 @@ export const projects = [
   },
   {
     title: "Personal Portfolio Website",
-    github: "https://github.com/Sean95164/Sean95164",
+    github: "https://github.com/Sean95164/Sean95164.github.io",
     description: [
       "A personal portfolio website built with Node.js, React, Framer Motion, and Tailwind CSS.",
       "Showcases my projects, skills, and experience in a clean and modern design.",
