@@ -22,8 +22,8 @@ export default function GlassHeader() {
         </motion.a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-10 text-sm font-bold ms-75">
-          {["blogs", "projects", "skills", "awards", "education"].map(
+        <nav className="hidden md:flex items-center space-x-10 text-sm font-bold ms-auto px-10">
+          {["blogs", "projects"].map(
             (item, index) => (
               <motion.a
                 key={item}
@@ -37,9 +37,6 @@ export default function GlassHeader() {
           
                 {item === "blogs" && ""}
                 {item === "projects" && ""}
-                {item === "skills" && ""}
-                {item === "awards" && ""}
-                {item === "education" && ""}
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </motion.a>
             )
@@ -72,7 +69,7 @@ export default function GlassHeader() {
             transition={{ duration: 0.3 }}
           >
             <nav className="flex flex-col space-y-4 text-sm font-medium">
-              {["blogs", "projects", "skills", "awards", "education"].map(
+              {["blogs", "projects"].map(
                 (item, index) => (
                   <motion.a
                     key={item}
@@ -83,11 +80,8 @@ export default function GlassHeader() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.2, delay: index * 0.1 }}
                   >
-                    {item === "blogs" && "📝 "}
-                    {item === "projects" && "🚀 "}
-                    {item === "skills" && "🛠️ "}
-                    {item === "awards" && "🏆 "}
-                    {item === "education" && "🎓 "}
+                    {item === "blogs" && ""}
+                    {item === "projects" && ""}
                     {item.charAt(0).toUpperCase() + item.slice(1)}
                   </motion.a>
                 )
