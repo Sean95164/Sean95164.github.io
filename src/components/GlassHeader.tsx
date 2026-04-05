@@ -22,7 +22,7 @@ export default function GlassHeader() {
         </motion.a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <nav className="hidden md:flex items-center space-x-10 text-sm font-bold ms-75">
           {["blogs", "projects", "skills", "awards", "education"].map(
             (item, index) => (
               <motion.a
@@ -35,11 +35,11 @@ export default function GlassHeader() {
                 whileHover={{ y: -2 }}
               >
           
-                {item === "blogs" && "📝 "}
-                {item === "projects" && "🚀 "}
-                {item === "skills" && "🛠️ "}
-                {item === "awards" && "🏆 "}
-                {item === "education" && "🎓 "}
+                {item === "blogs" && ""}
+                {item === "projects" && ""}
+                {item === "skills" && ""}
+                {item === "awards" && ""}
+                {item === "education" && ""}
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </motion.a>
             )
