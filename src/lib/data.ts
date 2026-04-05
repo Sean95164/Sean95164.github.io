@@ -37,14 +37,15 @@ export const skills = {
     "JavaScript",
     "MATLAB"
   ],
-  frontendDevelopment: [
+  web: [
     "HTML",
     "CSS",
     "React",
     "Tailwind CSS",
+    "Node.js",
+    "Express",
+    "MongoDB"
   ],
-  backendDevelopment: ["Node.js",, "Express"],
-  databaseAndStorage: ["MongoDB"],
   cloudAndDevOps: ["Docker"],
   DLFrameworks: ["TensorFlow", "PyTorch", "Fastai"],
   NotetakingTools: [

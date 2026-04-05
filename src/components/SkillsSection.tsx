@@ -65,13 +65,11 @@ export default function SkillsSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
         >
-          <SkillCategory category="Programming Languages" _skills={skills.programmingLanguages} icon="💻" />
-          <SkillCategory category="Frontend Development" _skills={skills.frontendDevelopment} icon="🎨" />
-          <SkillCategory category="Backend Development" _skills={skills.backendDevelopment} icon="⚙️" />
-          <SkillCategory category="Database & Storage" _skills={skills.databaseAndStorage} icon="🗄️" />
-          <SkillCategory category="Cloud & DevOps" _skills={skills.cloudAndDevOps} icon="☁️" />
-          <SkillCategory category="Deep Learning Frameworks" _skills={skills.DLFrameworks} icon="🤖" />
-          <SkillCategory category="Notetaking Tools" _skills={skills.NotetakingTools} icon="📝" />
+          <SkillCategory category="Programming Languages" _skills={skills.programmingLanguages} icon="" />
+          <SkillCategory category="Web" _skills={skills.web} icon="" />
+          <SkillCategory category="Cloud & DevOps" _skills={skills.cloudAndDevOps} icon="" />
+          <SkillCategory category="Deep Learning Frameworks" _skills={skills.DLFrameworks} icon="" />
+          <SkillCategory category="Notetaking Tools" _skills={skills.NotetakingTools} icon="" />
         </motion.div>
       </div>
     </section>
