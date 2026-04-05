@@ -16,7 +16,9 @@ export const education = [
     institution: "National Cheng Kung University",
     location: "Tainan, Taiwan",
     degree: "BSc Computer Science and Information Engineering",
+    logo: "/ncku-csie.png",
     period: "2025 - Present",
+    href: "https://www.csie.ncku.edu.tw/zh-hant/",
     achievements: [
     ],
   },
@@ -24,7 +26,19 @@ export const education = [
     institution: "National Cheng Kung University",
     location: "Tainan, Taiwan",
     degree: "BSc Engineering Science (Transfer to CSIE in 2025)",
+    logo: "/ncku-es.png",
     period: "2023 - 2025",
+    href: "https://www.es.ncku.edu.tw/esncku/zh/",
+    achievements: [
+    ],
+  },
+    {
+    institution: "The Affiliated Senior High School of National Chung Hsing University",
+    location: "Taichung, Taiwan",
+    degree: "107 -> 213 -> 313",
+    logo: "/shch.png",
+    period: "2020 - 2023",
+    href: "https://www.dali.tc.edu.tw/home",
     achievements: [
     ],
   },
@@ -79,14 +93,14 @@ export const awards = [
     issuer: "National Cheng Kung University",
     date: "Apr 2025",
     type: "Institutional",
-    position: "3rd Place",
+    position: "Top 5%",
   },
   {
     name: "112-2 NCKU ES Academic Excellence Awards",
     issuer: "National Cheng Kung University",
     date: "Oct 2024",
     type: "Institutional",
-    position: "3rd Place",
-  }
+    position: "Top 5%",
+  },
 
 ];

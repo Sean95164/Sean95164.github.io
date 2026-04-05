@@ -21,7 +21,7 @@ export default function AwardsSection() {
             </MotionWrapper>
           </div>
 
-          <div className="md:w-3/4">
+          <div className="md:w-7/8">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {awards.map((award, index) => (
                 <MotionWrapper key={award.name + award.date} delay={index * 0.1}>
