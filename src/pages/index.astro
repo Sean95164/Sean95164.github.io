@@ -6,16 +6,55 @@ import Footer from "@/components/Footer";
 import EducationSection from "@/components/EducationSection";
 import AwardsSection from "@/components/AwardsSection";
 import SkillsSection from "@/components/SkillsSection";
-
 ---
 
 <Layout>
   <GlassHeader client:only="react" />
-  <main class="min-h-screen">
-    <HeroSection client:only="react" />
-    <EducationSection client:only="react" />
-    <AwardsSection client:only="react" />
-    <SkillsSection client:only="react">
+  
+
+  <main class="min-h-screen max-w-3xl w-full mx-auto px-3 py-24 flex flex-col gap-20 md:gap-28">
+    
+    {/* Hero Section */}
+    <section id="about" class="w-full">
+      <HeroSection client:only="react" />
+    </section>
+
+    {/* Education Section */}
+    <section id="education" class="w-full relative">
+      <div class="hidden md:block absolute right-full top-0 pr-12 w-48 text-left">
+        <h2 class="text-xl md:text-2xl font-bold">
+          Education
+        </h2>
+      </div>
+      
+      {/* Mobile Title */}
+      <h2 class="md:hidden text-2xl font-bold mb-6">Education</h2>
+      <EducationSection client:only="react" />
+    </section>
+
+    {/* Awards Section */}
+    <section id="awards" class="w-full relative">
+      <div class="hidden md:block absolute right-full top-0 pr-12 w-48 text-left">
+        <h2 class="text-xl md:text-2xl font-bold">
+          Awards
+        </h2>
+      </div>
+      <h2 class="md:hidden text-2xl font-bold mb-6">Awards</h2>
+      <AwardsSection client:only="react" />
+    </section>
+
+    {/* Skills Section */}
+    <section id="skills" class="w-full relative">
+      <div class="hidden md:block absolute right-full top-0 pr-12 w-48 text-left">
+        <h2 class="text-xl md:text-2xl font-bold">
+          Skills
+        </h2>
+      </div>
+      <h2 class="md:hidden text-2xl font-bold mb-6">Skills</h2>
+      <SkillsSection client:only="react" />
+    </section>
+
   </main>
+
   <Footer client:only="react" />
 </Layout>
