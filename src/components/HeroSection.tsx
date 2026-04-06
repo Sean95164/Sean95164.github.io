@@ -38,7 +38,7 @@ export default function HeroSection() {
         {/* Left side: Personal info & contact links */}
         <div className="text-center md:text-left">
           <motion.h1
-            className="text-4xl md:text-5xl font-bold mb-2"
+            className="text-3xl md:text-3xl font-bold mb-2"
             variants={childVariants}
           >
             {personalInfo.name}{" "}
@@ -105,7 +105,7 @@ export default function HeroSection() {
             <img
               src={personalInfo.profilePicture}
               alt="Profile"
-              className="w-48 md:w-56 h-48 md:h-56 rounded-full relative ring-2 ring-purple-500/50 shadow-xl"
+              className="w-48 md:w-auto h-48 md:h-56 rounded-full relative ring-2 ring-purple-500/50 shadow-xl"
               style={{ objectFit: "cover" }}
             />
           </div>

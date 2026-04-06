@@ -1,11 +1,11 @@
 import { education } from "@/lib/data";
 import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
-import { Award, ExternalLink } from "lucide-react"; // 加入 ExternalLink 圖示（選用）
+import { Award, ExternalLink } from "lucide-react";
 
 export default function EducationSection() {
   return (
-        <div className="flex flex-col md:flex-row gap-8 md:gap-12">
+        <div className="flex flex-col gap-4 w-full">
           {/* Contents */}
           <div className="flex flex-col gap-4">
             {education.map((edu, index) => (
@@ -27,7 +27,7 @@ export default function EducationSection() {
                 </div>
 
                 {edu.logo && (
-                  <div className="absolute dark:opacity-40 pointer-events-none top-1/2 -translate-y-1/2 right-0 md:-right-12 w-40 h-40 md:w-64 md:h-64">
+                  <div className="absolute dark:opacity-40 pointer-events-none top-1/2 -translate-y-1/2 right-0 md:-right-4 w-40 h-40 md:w-64 md:h-64">
                     <img 
                       src={edu.logo}
                       alt="" 
@@ -36,7 +36,7 @@ export default function EducationSection() {
                   </div>
                 )}
                                
-                <div className="relative z-10 flex flex-col gap-1.5">
+                <div className="relative z-10 flex flex-col gap-1.5 w-full">
                   <h3 className="text-xl md:text-2xl font-bold tracking-tight group-hover:text-purple-500 transition-colors">
                     {edu.institution}
                   </h3>
